@@ -10,7 +10,7 @@ module.exports = {
         filename: '[name].bundle.js',
         clean: true
     },
-    mode: 'development',
+    mode: 'production',
     devtool: 'source-map'
 
 };
