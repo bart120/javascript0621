@@ -4,7 +4,8 @@ const webpack = require('webpack');
 module.exports = {
     entry: {
         main: './src/index/index.js',
-        game: './src/game/game.js'
+        game: './src/game/game.js',
+        cnrs: './src/cnrs/cnrs.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
