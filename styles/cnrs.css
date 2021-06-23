@@ -26,7 +26,7 @@ div.title h2{
     text-align: center;
 }
 
-.main .nav .nav-link{
+.main-param .nav .nav-link{
     font-size: 10px;
 }
 
@@ -49,26 +49,47 @@ span:hover {
     /* padding: 1px 1px; */
 }
 
+.switch-cardinal{ background:rgb(229, 191, 140)}
+.switch-percent{ background:rgb(215, 216, 145)}
+.switch-quantity{ background:rgb(171, 179, 59)}
+.switch-money{ background:rgb(171, 236, 182)}
+.switch-ordinal{ background:rgb(173, 201, 142)}
+.switch-fac{ background:rgb(243, 143, 143)}
+.switch-facility{ background:rgb(247, 166, 146)}
+.switch-gpe{ background:rgb(236, 118, 113)}
+.switch-language{ background:rgb(180, 116, 116)}
+.switch-loc{ background:rgb(247, 144, 216)}
+.switch-norp{ background:rgb(136, 169, 240)}
+.switch-person{ background:rgb(171, 212, 231)}
+.switch-org{ background:rgb(147, 230, 223)}
+.switch-date{ background:rgb(150, 180, 116)}
+.switch-time{ background:rgb(126, 238, 132)}
+.switch-event{ background:rgb(157, 206, 172)}
+.switch-product{ background:rgb(229, 200, 248)}
+.switch-law{ background:rgb(234, 171, 240)}
+.switch-work_of_art{ background:rgb(195, 169, 243)}
 
-.cardinal{ background:rgb(229, 191, 140)}
-.percent{ background:rgb(215, 216, 145)}
-.quantity{ background:rgb(171, 179, 59)}
-.money{ background:rgb(171, 236, 182)}
-.ordinal{ background:rgb(173, 201, 142)}
-.fac{ background:rgb(243, 143, 143)}
-.facility{ background:rgb(247, 166, 146)}
-.gpe{ background:rgb(236, 118, 113)}
-.language{ background:rgb(180, 116, 116)}
-.loc{ background:rgb(247, 144, 216)}
-.norp{ background:rgb(136, 169, 240)}
-.person{ background:rgb(171, 212, 231)}
-.org{ background:rgb(147, 230, 223)}
-.date{ background:rgb(150, 180, 116)}
-.time{ background:rgb(126, 238, 132)}
-.event{ background:rgb(157, 206, 172)}
-.product{ background:rgb(229, 200, 248)}
-.law{ background:rgb(234, 171, 240)}
-.work_of_art{ background:rgb(195, 169, 243)}
+.cardinal.active{ background:rgb(229, 191, 140)}
+.percent.active{ background:rgb(215, 216, 145)}
+.quantity.active{ background:rgb(171, 179, 59)}
+.money.active{ background:rgb(171, 236, 182)}
+.ordinal.active{ background:rgb(173, 201, 142)}
+.fac.active{ background:rgb(243, 143, 143)}
+.facility.active{ background:rgb(247, 166, 146)}
+.gpe.active{ background:rgb(236, 118, 113)}
+.language.active{ background:rgb(180, 116, 116)}
+.loc.active{ background:rgb(247, 144, 216)}
+.norp.active{ background:rgb(136, 169, 240)}
+.person.active{ background:rgb(171, 212, 231)}
+.org.active{ background:rgb(147, 230, 223)}
+.date.active{ background:rgb(150, 180, 116)}
+.time.active{ background:rgb(126, 238, 132)}
+.event.active{ background:rgb(157, 206, 172)}
+.product.active{ background:rgb(229, 200, 248)}
+.law.active{ background:rgb(234, 171, 240)}
+.work_of_art.active{ background:rgb(195, 169, 243)}
+
+.test.active{ background-color: red;}
 
 
 .food_related_term{ background:#83fd5e }

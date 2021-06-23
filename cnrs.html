@@ -9,43 +9,54 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <div class="container-fuild">
         <div class="title">
             <h1>TITRE 1</h1>
             <h2>TITRE 2</h2>
         </div>
 
-        <div class="main">
-            <div class="row">
-                <div id="main-text" class="col-9 main-text">
-
-
-                </div>
-                <div class="col-3 main-param">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a id="link-entities" class="nav-link active" href="#">Named Entites</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="link-rtd" class="nav-link" href="#">ReadingTestimonies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Components</a>
-                        </li>
-                    </ul>
-                    <div id="section-entities" class="section">
-                        <ul id="ul-section-entities" class="list-group list-group-flush">
-                        </ul>
-                    </div>
-                    <div id="section-rtd" style="display: none;" class="section">
-                        RTD
-                    </div>
-                </div>
+        <div class="main" style="width: 71em; margin-left: 5em;">
+            <div id="main-text" class="main-text">
+            </div>
+        </div>
+        <div class="main-param" style="position: fixed; right: 5em; top: 60px; width: 23em;">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a id="link-entities" class="nav-link active" href="#">Named Entites</a>
+                </li>
+                <li class="nav-item">
+                    <a id="link-rtd" class="nav-link" href="#">ReadingTestimonies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Components</a>
+                </li>
+            </ul>
+            <div id="section-entities" class="section">
+                <ul id="ul-section-entities" class="list-group list-group-flush">
+                </ul>
+            </div>
+            <div id="section-rtd" style="display: none;" class="section">
+                RTD
             </div>
         </div>
 
     </div>
 
+    <div class="modal" id="wait" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <p>Chargemnt en cours ...</p>
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Chargement en cours...</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
