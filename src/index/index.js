@@ -1,8 +1,20 @@
 "use strict"
 import { Mortgage } from '../services/mortgage';
+import { RateFinder } from '../services/rate-finder';
 
 const testNumber = (obj) => {
+
     const val = obj.value == '' ? '' : +obj.value;
+    /*if(obj.value == ''){
+        val = '';
+    }else{
+        val = 0 + obj.value;
+        val = +obj.value;
+    }*/
+
+    /*state = "nice" if is_nice else "not nice"
+    state = is_nice ? "nice" : "not nice"*/
+
     console.log(val);
     if (Number.isNaN(val)) {
         obj.classList.add("is-invalid");
@@ -15,8 +27,11 @@ const testNumber = (obj) => {
     }
 }
 
-const calculate = (event) => {
-    event.preventDefault();
+function calculate(event) {
+    //const calculate = (event) => {
+    if (event) { //test l'existance d'une variable
+        event.preventDefault();
+    }
     let principal = document.getElementById("principal");
     let years = document.getElementById("years");
     let rate = document.getElementById("rate");
@@ -42,11 +57,35 @@ const calculate = (event) => {
 
 
     document.getElementById("tableMortgage").innerHTML = html;
-
     document.getElementById("display").style.display = 'block';
 }
 
-document.getElementById("formcal").addEventListener('keyup', calculate);
-document.getElementById("formcal").addEventListener('change', calculate);
-document.getElementById("formcal").addEventListener('submit', calculate);
+const toExecuteWhenDOMIsLoaded = () => {
+    /*RateFinder.getRates().then((resp) => {
+        resp.json().then((data) => {
+            console.log('data', data);
+            for (let item of data) {
+                console.log(item.name);
+            }
+        })
+    });*/
+
+    RateFinder.getRates().then((data) => {
+        const select = document.getElementById("rate");
+        for (let item of data) {
+            const option = document.createElement("option");
+            option.value = item.rate;
+            option.text = item.name;
+
+            select.appendChild(option);
+        }
+    });
+
+    document.getElementById("formcal").addEventListener('keyup', calculate);
+    document.getElementById("formcal").addEventListener('change', calculate);
+    document.getElementById("formcal").addEventListener('submit', calculate);
+}
+
+document.addEventListener('DOMContentLoaded', toExecuteWhenDOMIsLoaded);
+//document.getElementById("rate")
 

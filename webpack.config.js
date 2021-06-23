@@ -3,7 +3,8 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        main: './src/index/index.js'
+        main: './src/index/index.js',
+        game: './src/game/game.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

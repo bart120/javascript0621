@@ -1,0 +1,14 @@
+[
+    {
+        "name": "2% (fixe)",
+        "rate": 2
+    },
+    {
+        "name": "3% (fixe)",
+        "rate": 3
+    },
+    {
+        "name": "5% (variable)",
+        "rate": 5
+    }
+]
